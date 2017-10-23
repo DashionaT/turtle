@@ -30,33 +30,37 @@ def draw_star(t, x, y, points, line, fill):
         t.left (turn)
     t.end_fill()
 
-
-
-draw_star(jade, 0, 0, 36, 'orange', 'blue')
-draw_star(jazmine, -300, -300, 18,  'pink', 'purple')
-draw_star(meower, -300, 200, 20, 'blue', 'yellow')
-draw_star(jade, 250, 100, 12, 'blue', 'pink')
-
-meower.forward(50)
-jade.back(50)
-
-for i in range (10):
-    jazmine.left(60)
-    jazmine.forward(80)
-    jazmine.right(80)
-    jazmine.forward(40)
-    
-    jade.right(60)
-    jade.left(80)
-    jade.back(100)
-    
-    meower.forward(60)
-    meower.left(90)
-    meower.right(45)
+def draw_house(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    forward(10)
+def draw_house(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    forward(10)
+    def draw_house(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    forward(10)
     
 
+    
+'''
+draw_star(jade, 0, 200, 36, 'orange', 'blue')
+draw_star(jazmine, -250, 200, 18,  'pink', 'purple')
+draw_star(meower, -500, 200, 20, 'orange', 'yellow')
+draw_star(jade, 250, 200, 12, 'blue', 'pink')
+'''
+
+draw_house(jade, 250, 0)
+draw_house(meower, -200, 0)
+draw_house(jazmine, 0, 0)
 
 
+# and now run around randomly
 all_turtles = (jazmine, jade, meower)
 
 MAX_DISTANCE_FROM_CENTER = 500
