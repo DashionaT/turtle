@@ -34,13 +34,64 @@ def draw_house(t, x, y):
     t.penup()
     t.goto(x, y)
     t.pendown()
-    forward(10)
-def draw_house(t, x, y):
+    t.forward(350)
+    t.right(90)
+    t.forward(350)
+    t.right(90)
+    t.forward(350)
+    t.right(90)
+    t.forward(350)
+    t.right(50)
+    t.forward(225)
+    t.right(79)
+    t.forward(231)
+
+def draw_window(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.left(39)
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+    t.penup()
+    t.right(90)
+    t.forward(170)
+    t.pendown()
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+    t.right(90)
+    t.forward(80)
+
+def draw_door(t, x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.right(90)
+    t.forward(150)
+    t.left(90)
+    t.forward(130)
+    t.left(90)
+    t.forward(50)
+    t.left(90)
+    t.forward(150)
+   
+        
+    
+    
+def draw_fence(t, x, y):
     t.penup()
     t.goto(x, y)
     t.pendown()
     forward(10)
-    def draw_house(t, x, y):
+def draw_mailbox(t, x, y):
     t.penup()
     t.goto(x, y)
     t.pendown()
@@ -49,15 +100,17 @@ def draw_house(t, x, y):
 
     
 '''
-draw_star(jade, 0, 200, 36, 'orange', 'blue')
-draw_star(jazmine, -250, 200, 18,  'pink', 'purple')
-draw_star(meower, -500, 200, 20, 'orange', 'yellow')
-draw_star(jade, 250, 200, 12, 'blue', 'pink')
+draw_star(jade, 0, 390, 36, 'orange', 'blue')
+draw_star(jazmine, -250, 390, 18,  'pink', 'purple')
+draw_star(meower, -500, 390, 20, 'orange', 'yellow')
+draw_star(jade, 250, 390, 12, 'blue', 'pink')
 '''
 
-draw_house(jade, 250, 0)
-draw_house(meower, -200, 0)
-draw_house(jazmine, 0, 0)
+draw_house(jade, 100, 0)
+draw_window(jade, 150, -48)
+draw_door(jade, 200, -350)
+draw_fence(meower, -200, 0)
+draw_mailbox(jazmine, 0, 0)
 
 
 # and now run around randomly
